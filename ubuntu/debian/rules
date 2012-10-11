@@ -8,17 +8,22 @@
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
-export DH_OPTIONS=-v --buildsystem=cmake
+export DH_OPTIONS=-v
 
 %:
 	dh  $@
 
 override_dh_auto_configure:
-	# Make Gazebo find ROS's OGRE and urdfdom libraries
-	dh_auto_configure -- -DPKG_CONFIG_PATH=/opt/ros/fuerte/lib/pkgconfig:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib/pkgconfig
+	# Pull in ROS and Gazebo configuration
+	if [ -f "/opt/ros/fuerte/setup.sh" ]; then . "/opt/ros/fuerte/setup.sh"; fi && \
+	if [ -f "/usr/share/gazebo-1.2.0/setup.sh" ]; then . "/usr/share/gazebo-1.2.0/setup.sh"; fi && \
+	dh_auto_configure
 
 override_dh_shlibdeps:
-	LD_LIBRARY_PATH=/opt/ros/fuerte/lib:/opt/ros/fuerte/stacks/visualization_common/ogre/ogre/lib dh_shlibdeps
+	# Pull in ROS and Gazebo configuration
+	if [ -f "/opt/ros/fuerte/setup.sh" ]; then . "/opt/ros/fuerte/setup.sh"; fi && \
+	if [ -f "/usr/share/gazebo-1.2.0/setup.sh" ]; then . "/usr/share/gazebo-1.2.0/setup.sh"; fi && \
+	dh_shlibdeps
 
 override_dh_auto_test:
 	echo -- Skipping tests

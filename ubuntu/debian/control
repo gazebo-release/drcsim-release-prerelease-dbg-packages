@@ -1,15 +1,15 @@
-Source: gazebo
+Source: drcsim
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
 Build-Depends: cmake, build-essential, debhelper, gazebo, ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry
-Homepage: http://gazebosim.org
+Homepage: http://theroboticschallenge.org
 
-Package: gazebo
+Package: drcsim
 Architecture: amd64
 Section: devel
 Priority: extra
 Depends: gazebo, ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
-Homepage: http://gazebosim.org
+Homepage: http://theroboticschallenge.org
