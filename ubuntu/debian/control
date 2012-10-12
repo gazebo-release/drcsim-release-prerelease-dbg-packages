@@ -1,4 +1,5 @@
 Source: drcsim
+Standards-Version: 3.9.3
 Maintainer: Brian Gerkey <gerkey@osrfoundation.org>
 Section: devel
 Priority: extra
