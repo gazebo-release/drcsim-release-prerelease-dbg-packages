@@ -1,3 +1,9 @@
+drcsim (0.9.0-0ubuntu5) precise; urgency=high
+
+  * Release from default at 2e0b48baca6e.
+
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Thu, 11 Oct 2012 19:00:00 -0700
+
 drcsim (0.9.0-0ubuntu4) precise; urgency=high
 
   * Release from default at 193:7e5453c4de94 (as opposed to last time, which was from gerkey_default)
