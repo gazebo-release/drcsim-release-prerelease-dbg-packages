@@ -7,7 +7,7 @@ Build-Depends: cmake, debhelper (>= 7.0.50~), gazebo, ros-fuerte-pr2-mechanism, 
 Homepage: http://theroboticschallenge.org
 
 Package: drcsim
-Architecture: amd64
+Architecture: any
 Section: devel
 Priority: extra
 Depends: gazebo, ros-fuerte-pr2-mechanism, ros-fuerte-std-msgs, ros-fuerte-common-msgs, ros-fuerte-image-common, ros-fuerte-geometry, ros-fuerte-pr2-controllers, ros-fuerte-geometry-experimental, ros-fuerte-robot-model-visualization, ${misc:Depends}
