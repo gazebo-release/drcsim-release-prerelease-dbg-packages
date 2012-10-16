@@ -1,3 +1,9 @@
+drcsim (1.0.1) precise; urgency=high
+ 
+  * Release 1.0.1
+ 
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Mon, 15 Oct 2012 16:20:00 -0700
+
 drcsim (1.0.0-0ubuntu1) precise; urgency=high
  
   * First 1.0.0 release, from default @ c6d6dedb68d5
