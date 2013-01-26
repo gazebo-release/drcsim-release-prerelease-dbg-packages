@@ -1,3 +1,9 @@
+drcsim-prerelease (1.4.1) precise; urgency=high
+ 
+  * pre-release 1.4.1
+ 
+ -- Brian Gerkey <gerkey@osrfoundation.org>  Wed, 20 Nov 2012 16:20:00 -0700
+
 drcsim-prerelease (1.4.0) precise; urgency=high
  
   * pre-release 1.4.0
