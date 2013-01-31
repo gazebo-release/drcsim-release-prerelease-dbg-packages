@@ -14,3 +14,12 @@ Depends: gazebo-prerelease (>= 1.3.0), ros-fuerte-pr2-mechanism, ros-fuerte-std-
 Description: 3D dynamics simulator for robotics
  Open source robot simulator designed to accurately simulate robots and worlds.
 Homepage: http://theroboticschallenge.org
+
+Package: drcsim-prerelease-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+    drcsim-prerelease (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for drcsim
+ This package contains the debugging symbols for DRC simulator
